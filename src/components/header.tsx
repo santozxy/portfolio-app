@@ -4,7 +4,8 @@ import { ToggleTheme } from "./toggle-theme";
 export function Header() {
   return (
     <header className="sticky top-0 z-10 backdrop-blur-sm bg-background/80 border-b">
-      <div className=" px-4 py-4 flex justify-end items-end">
+      <div className=" px-4 py-4 flex justify-between items-end">
+      <h1 className="text-2xl font-bold">Monnuery Junior</h1>
         <div className="flex items-center gap-4">
           <div className=" flex items-center gap-3">
             <a
