@@ -3,9 +3,9 @@ import { ToggleTheme } from "./toggle-theme";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-10 backdrop-blur-sm bg-background/80 border-b">
+    <header className="sticky top-0 z-10 ">
       <div className=" px-4 py-4 flex justify-between items-end">
-      <h1 className="text-2xl font-bold">Monnuery Junior</h1>
+        <h1 className="text-2xl font-bold">Monnuery Junior</h1>
         <div className="flex items-center gap-4">
           <div className=" flex items-center gap-3">
             <a
@@ -24,14 +24,8 @@ export function Header() {
             >
               <Linkedin size={20} />
             </a>
-            <a
-              href="mailto:monnuerypachecodossantos@gmail.com"
-              className="text-foreground hover:text-primary"
-            >
-              <Mail size={20} />
-            </a>
           </div>
-          <ToggleTheme />
+          {/* <ToggleTheme /> */}
         </div>
       </div>
     </header>
