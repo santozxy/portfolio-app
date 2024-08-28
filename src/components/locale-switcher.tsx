@@ -21,9 +21,9 @@ export function LocaleSwitcher() {
 
   const onLocaleChange = (nextLocale: string) => {
     startTransition(() => {
-      const segments = pathname.split('/').filter(Boolean);
+      const segments = pathname.split("/").filter(Boolean);
       segments[0] = nextLocale;
-      const newPathname = `/${segments.join('/')}`;
+      const newPathname = `/${segments.join("/")}`;
       router.push(newPathname);
     });
   };
@@ -36,10 +36,13 @@ export function LocaleSwitcher() {
         onValueChange={onLocaleChange}
         disabled={isPending}
       >
-        <SelectTrigger className="sm:w-[130px]" aria-label={t("changeLanguage")}>
+        <SelectTrigger
+          className="sm:w-[130px] bg-opacity-10 bg-gradient-to-tl from-black via-zinc-700/30 to-zinc-900 "
+          aria-label={t("changeLanguage")}
+        >
           <SelectValue />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="bg-opacity-10 bg-gradient-to-tl from-black via-zinc-700/30 to-zinc-900 ">
           <SelectItem value="en">{t("english")}</SelectItem>
           <SelectItem value="pt">{t("portuguese")}</SelectItem>
         </SelectContent>
