@@ -1,0 +1,67 @@
+{
+    "LocaleSwitcher": {
+        "changeLanguage": "EUA",
+        "portuguese": "Portuguese",
+        "english": "English"
+    },
+    "indexPage": {
+        "name": "Monnuery Junior",
+        "messageWelcome": "Welcome to my portfolio!",
+        "buttonDiscover": "Discover now"
+    },
+    "tabs": {
+        "about": "About",
+        "experience": "Experience",
+        "education": "Education",
+        "skills": "Skills"
+    },
+    "about": {
+        "title": "About",
+        "content": "Developer with experience in React Native, ReactJS, and NextJS, solid skills in HTML, CSS, JavaScript, and TypeScript. Communicative and committed, I meet deadlines efficiently. Familiar with agile methodologies such as Scrum and versioning tools like Git, GitHub, and GitLab. Experience in mobile and web projects, both as a team collaborator and as a freelancer. Constantly seeking evolution and professional improvement."
+    },
+    "experience": {
+        "title": "Experience",
+        "job1": {
+            "title": "SPECIALIST FRONT END DEVELOPER",
+            "company": "Syslae Solutions, Teresina, Piauí",
+            "period": "10/2023 - present",
+            "description": "Creation of web applications and mobile apps using technologies: ReactJS, NextJS, React Native, Typescript, Javascript, Scrum, Figma, using Git, Gitlab, and Github as versioning tools. Responsible for maintenance, version management, publication of Android and iOS Apps, and user support."
+        },
+        "job2": {
+            "title": "FRONT END DEVELOPER",
+            "company": "Freelance, Teresina, Piauí",
+            "period": "11/2022 - present",
+            "description": "As a freelancer, I work as a Front-End developer using technologies: HTML, CSS, SASS, SCSS, JavaScript, Typescript, ReactJS, React Native focusing on creating: Apps, Landing Pages, Web Sites, Mobile and Web Design."
+        },
+        "job3": {
+            "title": "FRONT-END DEVELOPER - INTERNSHIP",
+            "company": "Regional Electoral Court of Piauí, Teresina, Piauí",
+            "period": "05/2023 - 01/2024",
+            "description": "Development of Web Applications, Maintenance and Implementations of Internal Projects using technologies: HTML, SCSS, Angular 15+, ReactJS, React Native, TypeScript, Javascript and Git | Gitlab as versioning tools."
+        }
+    },
+    "education": {
+        "title": "Education",
+        "degree1": {
+            "title": "Technologist, Systems Analysis and Development",
+            "institution": "UniCesumar, Teresina",
+            "period": "June 2024 - June 2025"
+        },
+        "degree2": {
+            "title": "Bachelor's Degree, Computer Science",
+            "institution": "Federal Institute of Piauí - South Zone",
+            "period": "December 2024"
+        }
+    },
+    "skills": {
+        "title": "Skills and Competencies"
+    },
+    "contact": {
+        "title": "Contact Information",
+        "location": "Teresina, Piauí",
+        "email": "monnuerypachecodossantos@gmail.com"
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    }
+}
