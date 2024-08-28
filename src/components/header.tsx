@@ -1,27 +1,36 @@
-import { Github, Linkedin } from "lucide-react";
+import { ArrowLeft, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
+
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import { LocaleSwitcher } from "./locale-switcher";
 export function Header() {
   return (
-    <header className="sticky top-0 z-10 ">
-      <div className=" px-4 py-4 flex justify-between items-end">
-        <h1 className="text-2xl font-bold">Monnuery Junior</h1>
+    <header className="sticky top-0 z-10">
+      <div className=" px-4 py-4 flex justify-between items-center">
+        <Link href="/" className="flex items-center gap-4">
+          <ArrowLeft size={20} />
+          <h1 className="max-sm:hidden text-2xl font-bold">Monnuery Junior</h1>
+          <h1 className="sm:hidden font-bold">Monnuery.J</h1>
+        </Link>
         <div className="flex items-center gap-4">
+          <NextIntlClientProvider messages={useMessages()}>
+            <LocaleSwitcher />
+          </NextIntlClientProvider>
           <div className=" flex items-center gap-3">
-            <a
+            <Link
               href="https://github.com/santozxy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground hover:text-primary"
             >
-              <Github size={20} />
-            </a>
-            <a
+              <Github className="h-6 w-6  text-muted-foreground" />
+            </Link>
+            <Link
               href="https://linkedin.com/in/monnuery-junior"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground hover:text-primary"
             >
-              <Linkedin size={20} />
-            </a>
+              <Linkedin className="h-6 w-6  text-muted-foreground" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,25 +1,35 @@
 "use client";
-import { BriefcaseBusinessIcon, GraduationCap, User } from "lucide-react";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 export function Nav() {
   const path = usePathname();
+  const locale = useLocale();
+  const links = [
+    { href: "/about", text: locale === "en" ? "About" : "Sobre" },
+    {
+      href: "/experience",
+      text: locale === "en" ? "Experience" : "Experiência",
+    },
+    { href: "/education", text: locale === "en" ? "Education" : "Educação" },
+  ];
+  const active =
+    "bg-gradient-to-tl from-zinc-800 via-zinc-600/20 to-zinc-800/20 hover:animate-pulse";
   return (
-    <nav className=" flex items-center gap-6 mt-10">
-      <div className="flex items-center gap-2">
-        <User size={20} />
-        <Link href="/about">Sobre</Link>
-      </div>
-      <div className="flex items-center gap-2">
-        <BriefcaseBusinessIcon size={20} />
-        <Link href="/experience">Experiência</Link>
-      </div>
-      <div className="flex items-center gap-2">
-        <GraduationCap size={20} />
-        <Link href="/education">Formação</Link>
-      </div>
+    <nav className=" flex items-center sm:gap-6 ">
+      {links.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          className={`flex items-center gap-4 text-center animate-fade-in duration-500  hover:text-zinc-300 p-3 rounded-md ${
+            path === link.href ? active : ""
+          }`}
+        >
+          <h2>{link.text}</h2>
+        </Link>
+      ))}
     </nav>
   );
 }
