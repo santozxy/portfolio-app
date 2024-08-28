@@ -1,5 +1,5 @@
 import { ArrowLeft, Github, Linkedin } from "lucide-react";
-import Link from "next/link";
+import {Link} from "@/routing";
 
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { LocaleSwitcher } from "./locale-switcher";

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import {Link} from "@/routing";
 import React from "react";
 import { Rocket } from "lucide-react";
 import { LocaleSwitcher } from "@/components/locale-switcher";

@@ -1,6 +1,6 @@
 "use client";
 import { useLocale } from "next-intl";
-import Link from "next/link";
+import {Link} from "@/routing";
 import { usePathname } from "next/navigation";
 import React from "react";
 
