@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-800/20 to-black">
       <div className="my-16 animate-fade-in">
         <h2 className="text-base duration-500 text-zinc-500 hover:text-zinc-300">
-          Welcome a my portfólio
+          Welcome to my portfólio
         </h2>
       </div>
       <Particles
