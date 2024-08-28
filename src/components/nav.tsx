@@ -13,7 +13,7 @@ export function Nav() {
       href: "/experience",
       text: locale === "en" ? "Experience" : "Experiência",
     },
-    { href: "/education", text: locale === "en" ? "Education" : "Educação" },
+    { href: "/education", text: locale === "en" ? "Education" : "Formação" },
   ];
   const active =
     "bg-gradient-to-tl from-zinc-800 via-zinc-600/20 to-zinc-800/20 hover:animate-pulse";
@@ -24,7 +24,7 @@ export function Nav() {
           key={link.href}
           href={link.href}
           className={`flex items-center gap-4 text-center animate-fade-in duration-500  hover:text-zinc-300 p-3 rounded-md ${
-            path === link.href ? active : ""
+            path.includes(link.href) ? active : ""
           }`}
         >
           <h2>{link.text}</h2>
