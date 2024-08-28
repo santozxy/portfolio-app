@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function Education() {
   return (
-    <Card>
+    <Card >
       <CardHeader>
         <CardTitle>Formação</CardTitle>
       </CardHeader>
