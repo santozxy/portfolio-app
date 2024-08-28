@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useRef, useEffect, useState, useCallback, use } from "react";
 import { useMousePosition } from "@/utils/mouse";
-import { useTheme } from "next-themes";
 
 interface ParticlesProps {
   className?: string;
@@ -19,7 +17,6 @@ export default function Particles({
   ease = 50,
   refresh = false,
 }: ParticlesProps) {
-  const {resolvedTheme} = useTheme();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const canvasContainerRef = useRef<HTMLDivElement>(null);
   const context = useRef<CanvasRenderingContext2D | null>(null);
@@ -101,7 +98,7 @@ export default function Particles({
         context.current.translate(translateX, translateY);
         context.current.beginPath();
         context.current.arc(x, y, size, 0, 2 * Math.PI);
-        context.current.fillStyle = resolvedTheme === "dark" ? `rgba(255, 255, 255, ${alpha})` :  `rgba(0, 0, 0, ${alpha})`;
+        context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
         context.current.fill();
         context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 
@@ -110,7 +107,7 @@ export default function Particles({
         }
       }
     },
-    [dpr, resolvedTheme]
+    [dpr]
   );
 
   const clearContext = () => {

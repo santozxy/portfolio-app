@@ -1,6 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-import { ToggleTheme } from "./toggle-theme";
-
+import { Github, Linkedin } from "lucide-react";
 export function Header() {
   return (
     <header className="sticky top-0 z-10 ">
@@ -25,7 +23,6 @@ export function Header() {
               <Linkedin size={20} />
             </a>
           </div>
-          {/* <ToggleTheme /> */}
         </div>
       </div>
     </header>

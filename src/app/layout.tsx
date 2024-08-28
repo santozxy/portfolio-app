@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={plusJakartaSans.className}>
-      <body className="antialiased ">{children}</body>
+      <body className="antialiased dark">{children}</body>
     </html>
   );
 }
