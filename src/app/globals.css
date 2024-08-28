@@ -67,3 +67,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media screen and (max-width: 1550px) {
+  html {
+    font-size: 90%;
+  }
+}
