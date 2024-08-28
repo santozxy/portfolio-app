@@ -17,7 +17,7 @@
     },
     "about": {
         "title": "About",
-        "content": "Developer with experience in React Native, ReactJS, and NextJS, solid skills in HTML, CSS, JavaScript, and TypeScript. Communicative and committed, I meet deadlines efficiently. Familiar with agile methodologies such as Scrum and versioning tools like Git, GitHub, and GitLab. Experience in mobile and web projects, both as a team collaborator and as a freelancer. Constantly seeking evolution and professional improvement."
+        "description": "Developer with experience in React Native, ReactJS, and NextJS, solid skills in HTML, CSS, JavaScript, and TypeScript. Communicative and committed, I meet deadlines efficiently. Familiar with agile methodologies such as Scrum and versioning tools like Git, GitHub, and GitLab. Experience in mobile and web projects, both as a team collaborator and as a freelancer. Constantly seeking evolution and professional improvement."
     },
     "experience": {
         "title": "Experience",
