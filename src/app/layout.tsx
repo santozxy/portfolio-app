@@ -6,8 +6,43 @@ import Particles from "@/components/particles";
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Monnuery Junior's Portfolio",
+  title: {
+    default: "monnuery.vercel.app",
+    template: "%s | MJ",
+  },
+  description: "Monnuery Júnior's personal website",
+  openGraph: {
+    title: "monnuery.vercel.app",
+    description: "Monnuery Júnior's personal website",
+    url: "https://monnuery.vercel.app",
+    siteName: "monnuery.vercel.app",
+    images: [
+      {
+        url: "https://monnuery.vercel.app/og.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "monnuery.vercel.app",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
