@@ -8,7 +8,7 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 export default function Home() {
   const t = useTranslations("indexPage");
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-800/20 to-black">
+    <div className="flex flex-col items-center justify-center w-screen h-dvh overflow-hidden bg-gradient-to-tl from-black via-zinc-800/20 to-black">
       <div className="absolute top-4 right-4">
       <NextIntlClientProvider messages={useMessages()}>
         <LocaleSwitcher />
