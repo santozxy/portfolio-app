@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: "Experience",
-  description: "My experience",
+  description: "My experience 🧑🏽‍💻",
 };
 
 export default function Experience() {
