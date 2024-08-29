@@ -37,7 +37,7 @@ export function LocaleSwitcher() {
         disabled={isPending}
       >
         <SelectTrigger
-          className="sm:w-[130px] bg-opacity-10 bg-gradient-to-tl from-black via-zinc-700/30 to-zinc-900 "
+          className="bg-opacity-10 bg-gradient-to-tl from-black via-zinc-700/30 to-zinc-900 "
           aria-label={t("changeLanguage")}
         >
           <SelectValue />
