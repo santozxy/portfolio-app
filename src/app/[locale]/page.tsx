@@ -5,6 +5,11 @@ import { LocaleSwitcher } from "@/components/locale-switcher";
 import { useTranslations } from "next-intl";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
+export const metadata = {
+  title: "Welcome 👋",
+  description: "Welcome to my portfolio 🚀",
+};
+
 export default function Home() {
   const t = useTranslations("indexPage");
   return (

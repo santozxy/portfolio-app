@@ -3,7 +3,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 
 export const metadata = {
-  title: "Experience",
+  title: "Experience 🖥️",
   description: "My experience 🧑🏽‍💻",
 };
 
