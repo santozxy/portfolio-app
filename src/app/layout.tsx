@@ -8,7 +8,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
     default: "monnuery.vercel.app",
-    template: "%s | monnuery.vercel.app",
+    template: "%s",
   },
   description: "Monnuery Júnior's personal website",
   openGraph: {
