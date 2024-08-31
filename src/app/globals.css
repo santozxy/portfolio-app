@@ -59,6 +59,10 @@
   }
 }
 
+html{
+  scrollbar-width: none
+}
+
 @layer base {
   * {
     @apply border-border;
