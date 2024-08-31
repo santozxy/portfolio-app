@@ -11,7 +11,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-4">
           <ArrowLeft size={20} />
           <h1 className="max-sm:hidden text-2xl font-bold">Monnuery Junior</h1>
-          <h1 className="sm:hidden font-bold">Monnuery.J</h1>
+          <h1 className="sm:hidden font-bold">Voltar</h1>
         </Link>
         <div className="flex items-center gap-4">
           <NextIntlClientProvider messages={useMessages()}>
