@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "monnuery.vercel.app",
+    title: "monnuery.dev",
     card: "summary_large_image",
   },
   icons: {
