@@ -7,23 +7,23 @@ const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "monnuery.vercel.app",
+    default: "monnuery.dev",
     template: "%s",
   },
   description: "Monnuery Júnior's personal website",
   openGraph: {
-    title: "monnuery.vercel.app",
-    description: "Monnuery Júnior's personal website",
-    url: "https://monnuery.vercel.app",
-    siteName: "monnuery.vercel.app",
+    title: "Monnuery Junior - Front-End Developer",
+    description:
+      "Discover Monnuery Junior's portfolio and his professional experience as a front-end specialist",
+    url: "https://monnuery.dev",
+    siteName: "monnuery.dev",
     images: [
       {
-        url: "https://monnuery.vercel.app/og.png",
+        url: "https://monnuery.dev/og.png",
         width: 1920,
         height: 1080,
       },
     ],
-    type: "website",
   },
   robots: {
     index: true,
