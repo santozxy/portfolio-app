@@ -1,13 +1,14 @@
 {
     "LocaleSwitcher": {
-        "changeLanguage": "EUA",
+        "changeLanguage": "EN",
         "portuguese": "Portuguese",
-        "english": "English"
+        "english": "English",
+        "spanish": "Spanish"
     },
     "indexPage": {
         "name": "Monnuery Junior",
         "messageWelcome": "Welcome to my portfolio!",
-        "buttonDiscover": "Discover now"
+        "buttonDiscover": "Discover more"
     },
     "tabs": {
         "about": "About",
@@ -17,33 +18,190 @@
     },
     "about": {
         "title": "About",
-        "description": "Developer with experience in React Native, ReactJS, and NextJS, solid skills in HTML, CSS, JavaScript, and TypeScript. Communicative and committed, I meet deadlines efficiently. Familiar with agile methodologies such as Scrum and versioning tools like Git, GitHub, and GitLab. Experience in mobile and web projects, both as a team collaborator and as a freelancer. Constantly seeking evolution and professional improvement."
+        "description": "Specialist front-end developer with experience in React Native, ReactJS, and NextJS, solid skills in HTML, CSS, JavaScript, and TypeScript. Familiar with agile methodologies such as Scrum and versioning tools like Git, GitHub, and GitLab. Experience in web and mobile projects. Practical experience in designing and implementing highly responsive user interface components, deploying UI UX concepts. Ease in translating designs and wireframes into high-quality code. Adept at monitoring, improving, and maintaining frontend performance."
     },
     "experience": {
         "title": "Experience",
         "job1": {
-            "title": "SPECIALIST FRONT END DEVELOPER",
+            "title": "MID-LEVEL FRONT END DEVELOPER",
             "company": "Syslae Solutions, Teresina, Piauí",
-            "period": "10/2023 - Present",
-            "description": "Creation of web applications and mobile apps using technologies: ReactJS, NextJS, React Native, Typescript, Javascript, Scrum, Figma, using Git, Gitlab, and Github as versioning tools. Responsible for maintenance, version management, publication of Android and iOS Apps, and user support."
+            "period": "10/2023 - present",
+            "description": "Creation of web applications and mobile apps using technologies: ReactJS, NextJS, React Native, Typescript, Javascript, Scrum, Figma, with Git, Gitlab, and Github as versioning tools. Responsible for maintenance, creation of new features, version management, publication of Android and iOS Apps, and user support.",
+            "projects": {
+                "project1": {
+                    "finalized": true,
+                    "type": "mobile",
+                    "title": "SEI PIAUI",
+                    "description": "It's a React Native app for managing electronic archival processes and documents. One of its main features is knowledge sharing with real-time updates and communication of new events. SEI is a tool that allows the production, editing, signing, and processing of documents within the system itself, providing virtualization of processes and documents, allowing simultaneous action of various units at the same time in the same process, even if physically distant, reducing the time to carry out activities.",
+                    "responsibilities": "Development of new features, maintenance and bug fixing, API integration, publishing versions on Play Store and App Store.",
+                    "technologies": [
+                        "React Native",
+                        "Typescript",
+                        "Nativewind",
+                        "Eslint | Prettier",
+                        "ReactQuery",
+                        "Axios",
+                        "React Hook Form",
+                        "Zod",
+                        "Redux",
+                        "React Navigation",
+                        "OneSignal",
+                        "Image manipulation",
+                        "PDF file manipulation"
+                    ],
+                    "links": {
+                        "playstore": "https://play.google.com/store/apps/details?id=br.com.tre_pi.sei&hl=pt_BR&gl=US",
+                        "appstore": "https://apps.apple.com/br/app/sei-piau%C3%AD/id1560000000"
+                    }
+                },
+                "project2": {
+                    "finalized": true,
+                    "type": "mobile",
+                    "title": "Digital Transit",
+                    "description": "Digital Transit is an essential app for traffic agents to simplify accident recording. Capture details, scene photos, use maps for location accuracy. With automatic reports and cloud backup, Digital Transit transforms the process, promoting a digital and effective approach to ensure road safety. Speed, precision, and ease in the palm of your hand.",
+                    "responsibilities": "Project manager, creation and development of new features, maintenance and bug fixing, user support, API integration, publishing versions on Play Store and App Store.",
+                    "technologies": [
+                        "React Native",
+                        "Typescript",
+                        "Eslint | Prettier",
+                        "Axios",
+                        "ReactQuery",
+                        "React Navigation",
+                        "React Hook Form",
+                        "Jest",
+                        "Yup",
+                        "Zustand",
+                        "Redux Toolkit",
+                        "Geolocation",
+                        "Google Maps",
+                        "Shopify Skia",
+                        "WatermelonDB",
+                        "Bluetooth manipulation",
+                        "Document printing",
+                        "Image manipulation",
+                        "PDF file manipulation"
+                    ],
+                    "links": {
+                        "playstore": "https://play.google.com/store/apps/details?id=com.syslae.transitodigital&hl=pt_BR",
+                        "appstore": "https://apps.apple.com/br/app/digital-tr%C3%A2nsito/id1560000000"
+                    }
+                },
+                "project3": {
+                    "finalized": true,
+                    "type": "web",
+                    "title": "SESAPI Panel",
+                    "description": "The SESAPI Panel is a web application that aims to provide information about the status of health processes in the state of Piauí. The application consists of searching for a protocol and obtaining information about the flow that occurs between units in real-time.",
+                    "responsibilities": "Creation and development of new features, maintenance, API integration, publishing web versions.",
+                    "technologies": [
+                        "ReactJS",
+                        "Typescript",
+                        "Eslint | Prettier",
+                        "Tailwind",
+                        "Axios",
+                        "Tanstack Query",
+                        "Tanstack React Router",
+                        "Framer Motion",
+                        "React Toastify"
+                    ],
+                    "links": {
+                        "website": "https://app.sesapi.pi.gov.br/painel"
+                    }
+                },
+                "project4": {
+                    "finalized": false,
+                    "type": "web",
+                    "title": "SEAD Panel",
+                    "description": "The SEAD Panel is a web application that aims to provide information about the status of administrative processes of all agencies in the state of Piauí. The application features authentication with gov.br, informatives, parameterized indicators, easy-to-visualize tables and graphs, documents, visualization and download of documents in PDF | HTML | Images.",
+                    "responsibilities": "Creation and development of new features, maintenance, API integration, publishing web versions.",
+                    "technologies": [
+                        "ReactJS",
+                        "Typescript",
+                        "Eslint | Prettier",
+                        "Tailwind",
+                        "Shadcn UI",
+                        "Axios",
+                        "Tanstack Query",
+                        "Tanstack React Router",
+                        "React Hook Form",
+                        "Zod",
+                        "Zustand",
+                        "Zustand Persist",
+                        "Crypto JS",
+                        "Recharts",
+                        "React Toastify"
+                    ],
+                    "links": {
+                        "website": "https://demo.painel.sead.pi.gov.br/"
+                    }
+                },
+                "project5": {
+                    "finalized": false,
+                    "type": "web",
+                    "title": "Education",
+                    "description": "Education is a school management tool where it's possible to manage enrollments, classes, subjects, teachers, students, grades, attendance, class diaries, report cards, historical records, reports, among others.",
+                    "responsibilities": "Creation and development of new features, maintenance, API integration, publishing web versions.",
+                    "technologies": [
+                        "Nextjs",
+                        "App Router",
+                        "Typescript",
+                        "Tailwind",
+                        "Eslint | Prettier",
+                        "Shadcn UI",
+                        "Fetch API",
+                        "Next Auth",
+                        "Server Components",
+                        "Cookies Management",
+                        "React Hook Form",
+                        "Zod",
+                        "React Toastify"
+                    ],
+                    "links": {
+                        "website": "https://demo.educationn.com.br/"
+                    }
+                }
+            }
         },
         "job2": {
             "title": "FRONT END DEVELOPER",
             "company": "Freelance, Teresina, Piauí",
             "period": "11/2022 - present",
-            "description": "As a freelancer, I work as a Front-End developer using technologies: HTML, CSS, SASS, SCSS, JavaScript, Typescript, ReactJS, React Native focusing on creating: Apps, Landing Pages, Web Sites, Mobile and Web Design."
+            "description": "As a freelancer, I work as a Front-End developer using technologies: HTML, CSS, SASS, SCSS, JavaScript, Typescript, ReactJS, React Native focusing on creating: Apps, Landing Pages, Websites, Mobile and Web Design."
         },
         "job3": {
             "title": "FRONT-END DEVELOPER - INTERNSHIP",
             "company": "Regional Electoral Court of Piauí, Teresina, Piauí",
             "period": "05/2023 - 01/2024",
-            "description": "Development of Web Applications, Maintenance and Implementations of Internal Projects using technologies: HTML, SCSS, Angular 15+, ReactJS, React Native, TypeScript, Javascript and Git | Gitlab as versioning tools."
+            "description": "Development of Web Applications, Maintenance and Implementations of Internal Projects using technologies: HTML, SCSS, Angular 15+, ReactJS, React Native, TypeScript, Javascript and Git | Gitlab as versioning tools.",
+            "projects": {
+                "project1": {
+                    "finalized": true,
+                    "type": "web",
+                    "title": "RACE - Ranking of Electoral Offices",
+                    "description": "RACE is a web application that aims to provide information about the situation of electoral offices in the state of Piauí. The application consists of registering evaluations, indicators, and parameters for each electoral office in Piauí and generating a ranking according to established criteria.",
+                    "responsibilities": "Creation and development of new features, maintenance, API integration, publishing web versions.",
+                    "technologies": [
+                        "Angular 15+",
+                        "Typescript",
+                        "Eslint | Prettier",
+                        "Angular Material",
+                        "RxJS",
+                        "Ngx Bootstrap",
+                        "Ngx Charts",
+                        "Keycloak",
+                        "PrimeNG",
+                        "NGXS"
+                    ],
+                    "links": {
+                        "website": ""
+                    }
+                }
+            }
         }
     },
     "education": {
         "title": "Education",
         "degree1": {
-            "title": "Technologist, Systems Analysis and Development",
+            "title": "Associate's Degree, Systems Analysis and Development",
             "institution": "UniCesumar, Teresina",
             "period": "June 2024 - June 2025"
         },
@@ -60,8 +218,5 @@
         "title": "Contact Information",
         "location": "Teresina, Piauí",
         "email": "monnuerypachecodossantos@gmail.com"
-    },
-    "footer": {
-        "rights": "All rights reserved."
     }
 }
