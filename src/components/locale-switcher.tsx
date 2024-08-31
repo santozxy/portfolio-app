@@ -45,6 +45,7 @@ export function LocaleSwitcher() {
         <SelectContent className="bg-opacity-10 bg-gradient-to-tl from-black via-zinc-700/30 to-zinc-900 ">
           <SelectItem value="en">{t("english")}</SelectItem>
           <SelectItem value="pt">{t("portuguese")}</SelectItem>
+          <SelectItem value="es">{t("spanish")}</SelectItem>
         </SelectContent>
       </Select>
     </div>
