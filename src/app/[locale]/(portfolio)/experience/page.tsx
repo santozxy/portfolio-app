@@ -22,6 +22,9 @@ import Particles from "@/components/particles";
 
 export default function Component() {
   const t = useTranslations("experience");
+  const test = t("test")
+
+  console.log(test)
 
   const experiences = [
     {
@@ -34,12 +37,7 @@ export default function Component() {
         {
           title: t("job1.projects.project1.title"),
           description: t("job1.projects.project1.description"),
-          responsibilities: {
-            title: t("job1.projects.project1.responsibilities.title"),
-            description: t(
-              "job1.projects.project1.responsibilities.description"
-            ),
-          },
+          responsibilities: t("job1.projects.project1.responsibilities"),
           technologies: {
             title: t("job1.projects.project1.technologies.title"),
             list: t.raw("job1.projects.project1.technologies.list"),
@@ -52,12 +50,7 @@ export default function Component() {
         {
           title: t("job1.projects.project2.title"),
           description: t("job1.projects.project2.description"),
-          responsibilities: {
-            title: t("responsibilities"),
-            description: t(
-              "job1.projects.project2.responsibilities.description"
-            ),
-          },
+          responsibilities: t("job1.projects.project2.responsibilities"),
           technologies: {
             title: t("job1.projects.project2.technologies.title"),
             list: t.raw("job1.projects.project2.technologies.list"),
@@ -70,12 +63,7 @@ export default function Component() {
         {
           title: t("job1.projects.project3.title"),
           description: t("job1.projects.project3.description"),
-          responsibilities: {
-            title: t("job1.projects.project3.responsibilities.title"),
-            description: t(
-              "job1.projects.project3.responsibilities.description"
-            ),
-          },
+          responsibilities: t("job1.projects.project3.responsibilities"),
           technologies: {
             title: t("job1.projects.project3.technologies.title"),
             list: t.raw("job1.projects.project3.technologies.list"),
@@ -87,12 +75,8 @@ export default function Component() {
         {
           title: t("job1.projects.project4.title"),
           description: t("job1.projects.project4.description"),
-          responsibilities: {
-            title: t("job1.projects.project4.responsibilities.title"),
-            description: t(
-              "job1.projects.project4.responsibilities.description"
-            ),
-          },
+          responsibilities: t("job1.projects.project4.responsibilities"),
+
           technologies: {
             title: t("job1.projects.project4.technologies.title"),
             list: t.raw("job1.projects.project4.technologies.list"),
@@ -104,12 +88,7 @@ export default function Component() {
         {
           title: t("job1.projects.project5.title"),
           description: t("job1.projects.project5.description"),
-          responsibilities: {
-            title: t("job1.projects.project5.responsibilities.title"),
-            description: t(
-              "job1.projects.project5.responsibilities.description"
-            ),
-          },
+          responsibilities: t("job1.projects.project5.responsibilities"),
           technologies: {
             title: t("job1.projects.project5.technologies.title"),
             list: t.raw("job1.projects.project5.technologies.list"),
@@ -137,12 +116,7 @@ export default function Component() {
         {
           title: t("job3.projects.project1.title"),
           description: t("job3.projects.project1.description"),
-          responsibilities: {
-            title: t("job3.projects.project1.responsibilities.title"),
-            description: t(
-              "job1.projects.project1.responsibilities.description"
-            ),
-          },
+          responsibilities: t("job1.projects.project1.responsibilities"),
           technologies: {
             title: t("job3.projects.project1.technologies.title"),
             list: t.raw("job3.projects.project1.technologies.list"),
@@ -203,15 +177,15 @@ export default function Component() {
                             </SheetHeader>
                             <div className="mt-4">
                               <h5 className="font-semibold mb-1">
-                                {project.responsibilities.title}
+                                {t("titleResponsibilities")}
                               </h5>
                               <p className="text-sm">
-                                {project.responsibilities.description}
+                                {project.responsibilities}
                               </p>
                             </div>
                             <div className="mt-4">
                               <h5 className="font-semibold mb-1">
-                                {project.technologies.title}
+                                {t("titleTechnologies")}
                               </h5>
                               <div className="flex flex-wrap gap-1">
                                 {project.technologies.list.map(
@@ -226,7 +200,9 @@ export default function Component() {
                             {project.links &&
                               Object.keys(project.links).length > 0 && (
                                 <div className="mt-4">
-                                  <h5 className="font-semibold mb-1">Links</h5>
+                                  <h5 className="font-semibold mb-1">
+                                    {t("titleLinks")}
+                                  </h5>
                                   <div className="flex flex-wrap gap-2">
                                     {Object.entries(project.links).map(
                                       ([key, value]) =>
