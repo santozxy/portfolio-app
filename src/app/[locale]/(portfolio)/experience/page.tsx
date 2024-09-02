@@ -14,6 +14,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export default function Component() {
   const t = useTranslations("experience");
+  console.log(t.raw("job1.projects.project1.technologies.list"));
   const experiences = [
     {
       title: t("job1.title"),
@@ -26,7 +27,7 @@ export default function Component() {
           description: t("job1.projects.project1.description"),
           responsibilities: t("job1.projects.project1.responsibilities"),
           technologies: t
-            .raw("job1.projects.project1.technologies")
+            .raw("job1.projects.project1.technologies.list")
             .map((technology: string) => (
               <Badge key={technology}>{technology}</Badge>
             )),
@@ -40,7 +41,7 @@ export default function Component() {
           description: t("job1.projects.project2.description"),
           responsibilities: t("job1.projects.project2.responsibilities"),
           technologies: t
-            .raw("job1.projects.project2.technologies")
+            .raw("job1.projects.project2.technologies.list")
             .map((technology: string) => (
               <Badge key={technology}>{technology}</Badge>
             )),
@@ -54,7 +55,7 @@ export default function Component() {
           description: t("job1.projects.project3.description"),
           responsibilities: t("job1.projects.project3.responsibilities"),
           technologies: t
-            .raw("job1.projects.project3.technologies")
+            .raw("job1.projects.project3.technologies.list")
             .map((technology: string) => (
               <Badge key={technology}>{technology}</Badge>
             )),
@@ -67,7 +68,7 @@ export default function Component() {
           description: t("job1.projects.project4.description"),
           responsibilities: t("job1.projects.project4.responsibilities"),
           technologies: t
-            .raw("job1.projects.project4.technologies")
+            .raw("job1.projects.project4.technologies.list")
             .map((technology: string) => (
               <Badge key={technology}>{technology}</Badge>
             )),
@@ -80,7 +81,7 @@ export default function Component() {
           description: t("job1.projects.project5.description"),
           responsibilities: t("job1.projects.project5.responsibilities"),
           technologies: t
-            .raw("job1.projects.project5.technologies")
+            .raw("job1.projects.project5.technologies.list")
             .map((technology: string) => (
               <Badge key={technology}>{technology}</Badge>
             )),
@@ -107,7 +108,7 @@ export default function Component() {
           description: t("job3.projects.project1.description"),
           responsibilities: t("job3.projects.project1.responsibilities"),
           technologies: t
-            .raw("job3.projects.project1.technologies")
+            .raw("job3.projects.project1.technologies.list")
             .map((technology: string) => (
               <Badge key={technology}>{technology}</Badge>
             )),

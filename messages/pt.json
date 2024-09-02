@@ -28,27 +28,31 @@
       "period": "10/2023 - atual",
       "description": "Criação de aplicações web e aplicativos móveis utilizando as tecnologias: ReactJS, NextJS, React Native, Typescript, Javascript, Scrum, Figma, tendo Git, Gitlab e Github como ferramentas de versionamento. Responsável pela manutenção, criação de novas funcionalidades, gerenciamento de versões, publicação de Apps Android e iOS e suporte aos usuários.",
       "projects": {
+        "title": "Projetos",
         "project1": {
           "finalized": true,
           "type": "mobile",
           "title": "SEI PIAUI",
           "description": "é um aplicativo feito em React Native de gestão de processos e documentos arquivísticos eletrônicos. Uma das suas principais características é o compartilhamento do conhecimento com atualização e comunicação de novos eventos em tempo real. O SEI é uma ferramenta que permite a produção, edição, assinatura e trâmite de documentos dentro do próprio sistema, proporcionando a virtualização de processos e documentos, permitindo atuação simultânea de várias unidades ao mesmo tempo em um mesmo processo, ainda que distantes fisicamente, reduzindo o tempo de realização das atividades.",
           "responsibilities": "Desenvolvimento de novas funcionalidades, manutenção e correção de bugs, integração com API's, publicação de versões na Play Store e App Store.",
-          "technologies": [
-            "React Native",
-            "Typescript",
-            "Nativewind",
-            "Eslint | Prettier",
-            "ReactQuery",
-            "Axios",
-            "React Hook Form",
-            "Zod",
-            "Redux",
-            "React Navigation",
-            "OneSignal",
-            "Manipulação de imagens",
-            "Manipulação de arquivos PDF"
-          ],
+          "technologies": {
+            "title": "Tecnologias",
+            "list": [
+              "React Native",
+              "Typescript",
+              "Nativewind",
+              "Eslint | Prettier",
+              "ReactQuery",
+              "Axios",
+              "React Hook Form",
+              "Zod",
+              "Redux",
+              "React Navigation",
+              "OneSignal",
+              "Manipulação de imagens",
+              "Manipulação de arquivos PDF"
+            ]
+          },
           "links": {
             "playstore": "https://play.google.com/store/apps/details?id=br.com.tre_pi.sei&hl=pt_BR&gl=US",
             "appstore": "https://apps.apple.com/br/app/sei-piau%C3%AD/id1560000000"
@@ -60,27 +64,30 @@
           "title": "Digital Trânsito",
           "description": "O Digital Trânsito é um app essencial para agentes de trânsito simplificarem o registro de acidentes. Capture detalhes, fotos da cena, utilize mapas para precisão na localização. Com relatórios automáticos e backup em nuvem, o Digital Trânsito transforma o processo, promovendo uma abordagem digital e eficaz para garantir a segurança viária. Agilidade, precisão e facilidade na palma da mão.",
           "responsibilities": "Gerente de projeto, criação e desenvolvimento de novas funcionalidades, manutenção e correção de bugs, suporte aos usuários, integração com API's, publicação de versões na Play Store e App Store.",
-          "technologies": [
-            "React Native",
-            "Typescript",
-            "Eslint | Prettier",
-            "Axios",
-            "ReactQuery",
-            "React Navigation",
-            "React Hook Form",
-            "Jest",
-            "Yup",
-            "Zustand",
-            "Redux Toolkit",
-            "Geolocation",
-            "Google Maps",
-            "Shopify Skia",
-            "WatermelonDB",
-            "Manipulação Bluetooth",
-            "Impressão de documentos",
-            "Manipulação de imagens",
-            "Manipulação de arquivos PDF"
-          ],
+          "technologies": {
+            "title": "Tecnologias",
+            "list": [
+              "React Native",
+              "Typescript",
+              "Eslint | Prettier",
+              "Axios",
+              "ReactQuery",
+              "React Navigation",
+              "React Hook Form",
+              "Jest",
+              "Yup",
+              "Zustand",
+              "Redux Toolkit",
+              "Geolocation",
+              "Google Maps",
+              "Shopify Skia",
+              "WatermelonDB",
+              "Manipulação Bluetooth",
+              "Impressão de documentos",
+              "Manipulação de imagens",
+              "Manipulação de arquivos PDF"
+            ]
+          },
           "links": {
             "playstore": "https://play.google.com/store/apps/details?id=com.syslae.transitodigital&hl=pt_BR",
             "appstore": "https://apps.apple.com/br/app/digital-tr%C3%A2nsito/id1560000000"
@@ -92,17 +99,20 @@
           "title": "Painel SESAPI",
           "description": "O Painel SESAPI é uma aplicação web que tem como objetivo fornecer informações sobre a situação dos processos de saúde no estado do Piauí. A aplicação consiste em pesquisar um protocolo e obter as informações do fluxo que ocorre entre unidades em tempo real.",
           "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
-          "technologies": [
-            "ReactJS",
-            "Typescript",
-            "Eslint | Prettier",
-            "Tailwind",
-            "Axios",
-            "Tanstack Query",
-            "Tanstack React Router",
-            "Framer Motion",
-            "React Toastify"
-          ],
+          "technologies": {
+            "title": "Tecnologias",
+            "list": [
+              "ReactJS",
+              "Typescript",
+              "Eslint | Prettier",
+              "Tailwind",
+              "Axios",
+              "Tanstack Query",
+              "Tanstack React Router",
+              "Framer Motion",
+              "React Toastify"
+            ]
+          },
           "links": {
             "website": "https://app.sesapi.pi.gov.br/painel"
           }
@@ -113,23 +123,26 @@
           "title": "Painel SEAD",
           "description": "O Painel SEAD é uma aplicação web que tem como objetivo fornecer informações sobre a situação dos processos administrativos de todos os órgãos no estado do Piauí. A aplicação é conta com autenticação com o gov.br, informativos, indicadores parârametrizados, tabelas e gráficos de fácil visualização, documentos, visualização e download de documentos em PDF | HTML | Imagens.",
           "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
-          "technologies": [
-            "ReactJS",
-            "Typescript",
-            "Eslint | Prettier",
-            "Tailwind",
-            "Shadcn UI",
-            "Axios",
-            "Tanstack Query",
-            "Tanstack React Router",
-            "React Hook Form",
-            "Zod",
-            "Zustand",
-            "Zustand Persist",
-            "Crypto JS",
-            "Recharts",
-            "React Toastify"
-          ],
+          "technologies": {
+            "title": "Tecnologias",
+            "list": [
+              "ReactJS",
+              "Typescript",
+              "Eslint | Prettier",
+              "Tailwind",
+              "Shadcn UI",
+              "Axios",
+              "Tanstack Query",
+              "Tanstack React Router",
+              "React Hook Form",
+              "Zod",
+              "Zustand",
+              "Zustand Persist",
+              "Crypto JS",
+              "Recharts",
+              "React Toastify"
+            ]
+          },
           "links": {
             "website": "https://demo.painel.sead.pi.gov.br/"
           }
@@ -140,21 +153,24 @@
           "title": "Education",
           "description": "O Education é uma ferramenta de gestão escolar, onde é possível realizar a gestão de matrículas, turmas, disciplinas, professores, alunos, notas, frequência, diários de classe, boletins, históricos, relatórios, entre outros.",
           "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
-          "technologies": [
-            "Nextjs",
-            "App Router",
-            "Typescript",
-            "Tailwind",
-            "Eslint | Prettier",
-            "Shadcn UI",
-            "Fetch API",
-            "Next Auth",
-            "Server Components",
-            "Cookies Management",
-            "React Hook Form",
-            "Zod",
-            "React Toastify"
-          ],
+          "technologies": {
+            "title": "Tecnologias",
+            "list": [
+              "Nextjs",
+              "App Router",
+              "Typescript",
+              "Tailwind",
+              "Eslint | Prettier",
+              "Shadcn UI",
+              "Fetch API",
+              "Next Auth",
+              "Server Components",
+              "Cookies Management",
+              "React Hook Form",
+              "Zod",
+              "React Toastify"
+            ]
+          },
           "links": {
             "website": "https://demo.educationn.com.br/"
           }
@@ -179,18 +195,21 @@
           "title": "RACE - Ranking dos Cartórios Eleitorais",
           "description": "O RACE é uma aplicação web que tem como objetivo fornecer informações sobre a situação dos cartórios eleitorais no estado do Piauí. A aplicação consiste em cadastrar avaliações, indicadores e parâmetros para cada cartório eleitoral do Piauí e gerar um ranking de acordo com os critérios estabelecidos.",
           "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
-          "technologies": [
-            "Angular 15+",
-            "Typescript",
-            "Eslint | Prettier",
-            "Angular Material",
-            "RxJS",
-            "Ngx Bootstrap",
-            "Ngx Charts",
-            "Keykloak",
-            "PrimeNG",
-            "NGXS"
-          ],
+          "technologies": {
+            "title": "Tecnologias",
+            "list": [
+              "Angular 15+",
+              "Typescript",
+              "Eslint | Prettier",
+              "Angular Material",
+              "RxJS",
+              "Ngx Bootstrap",
+              "Ngx Charts",
+              "Keykloak",
+              "PrimeNG",
+              "NGXS"
+            ]
+          },
           "links": {
             "website": ""
           }
