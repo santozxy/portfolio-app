@@ -194,10 +194,7 @@
               "Keycloak",
               "PrimeNG",
               "NGXS"
-            ],
-            "links": {
-              "website": ""
-            }
+            ]
           }
         ]
       }
