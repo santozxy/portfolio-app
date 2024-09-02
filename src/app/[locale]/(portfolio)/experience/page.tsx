@@ -21,6 +21,7 @@ export default function Component() {
       company: t("job1.company"),
       period: t("job1.period"),
       description: t("job1.description"),
+      titleProjects: t("job1.projects.title"),
       projects: [
         {
           title: t("job1.projects.project1.title"),
@@ -96,12 +97,14 @@ export default function Component() {
       company: t("job2.company"),
       period: t("job2.period"),
       description: t("job2.description"),
+      titleProjects: t("job2.projects.title"),
     },
     {
       title: t("job3.title"),
       company: t("job3.company"),
       period: t("job3.period"),
       description: t("job3.description"),
+      titleProjects: t("job3.projects.title"),
       projects: [
         {
           title: t("job3.projects.project1.title"),
@@ -135,60 +138,53 @@ export default function Component() {
               </p>
               <p className="mt-2">{experience.description}</p>
               {experience.projects && (
-                <Accordion type="single" collapsible className="mt-4">
-                  <AccordionItem value="projects">
-                    <AccordionTrigger>Projects</AccordionTrigger>
-                    <AccordionContent>
-                      <ScrollArea className="h-72">
-                        <ul className="space-y-4">
-                          {experience.projects.map((project, projectIndex) => (
-                            <li key={projectIndex} className="border-t pt-4">
-                              <h4 className="font-semibold">{project.title}</h4>
-                              <p className="mt-2 text-sm">
-                                {project.description}
-                              </p>
-                              <p className="mt-2 text-sm">
-                                <strong>Responsibilities:</strong>{" "}
-                                {project.responsibilities}
-                              </p>
-                              <div className="mt-2">
-                                <strong className="text-sm">
-                                  Technologies:
-                                </strong>
-                                <div className="flex flex-wrap gap-2 mt-1">
-                                  {project.technologies}
-                                </div>
-                              </div>
-                              {project.links && (
-                                <div className="mt-2">
-                                  <strong className="text-sm">Links:</strong>
-                                  <div className="flex gap-2 mt-1">
-                                    {Object.entries(project.links).map(
-                                      ([key, value]) =>
-                                        value && (
-                                          <Link
-                                            key={key}
-                                            href={value}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center text-sm text-blue-600 hover:underline"
-                                          >
-                                            {key.charAt(0).toUpperCase() +
-                                              key.slice(1)}
-                                            <ExternalLink className="w-4 h-4 ml-1" />
-                                          </Link>
-                                        )
-                                    )}
-                                  </div>
-                                </div>
+                <Accordion type="single" collapsible className="w-full mt-4">
+                  {experience.projects.map((project, projectIndex) => (
+                    <AccordionItem
+                      key={projectIndex}
+                      value={`project-${index}-${projectIndex}`}
+                    >
+                      <AccordionTrigger className="text-left">
+                        <h4 className="font-semibold">{project.title}</h4>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <p className="mt-2 text-sm">{project.description}</p>
+                        <p className="mt-2 text-sm">
+                          <strong>Responsibilities:</strong>{" "}
+                          {project.responsibilities}
+                        </p>
+                        <div className="mt-2">
+                          <strong className="text-sm">Technologies:</strong>
+                          <div className="flex flex-wrap gap-1 mt-1">
+                            {project.technologies}
+                          </div>
+                        </div>
+                        {project.links && (
+                          <div className="mt-2">
+                            <strong className="text-sm">Links:</strong>
+                            <div className="flex gap-2 mt-1">
+                              {Object.entries(project.links).map(
+                                ([key, value]) =>
+                                  value && (
+                                    <Link
+                                      key={key}
+                                      href={value}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="flex items-center text-sm text-primary hover:underline"
+                                    >
+                                      {key.charAt(0).toUpperCase() +
+                                        key.slice(1)}
+                                      <ExternalLink className="w-4 h-4 ml-1" />
+                                    </Link>
+                                  )
                               )}
-                            </li>
-                          ))}
-                        </ul>
-                        <ScrollBar orientation="horizontal" />
-                      </ScrollArea>
-                    </AccordionContent>
-                  </AccordionItem>
+                            </div>
+                          </div>
+                        )}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
                 </Accordion>
               )}
             </li>

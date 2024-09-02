@@ -2,8 +2,7 @@
   "LocaleSwitcher": {
     "changeLanguage": "BR",
     "portuguese": "Português",
-    "english": "Inglês",
-    "spanish": "Espanhol"
+    "english": "Inglês"
   },
   "indexPage": {
     "name": "Monnuery Junior",
@@ -18,7 +17,7 @@
   },
   "about": {
     "title": "Sobre",
-    "description": "Desenvolvedor front-end especialista com experiência em React Native, ReactJS e NextJS, habilidades sólidas em HTML, CSS, JavaScript e TypeScript. Familiarizado com metodologias ágeis como Scrum e ferramentas de versionamento como Git, GitHub e GitLab. Experiência em projetos web e mobile. Experiência prática em projetar designs e implementar componentes de interface de usuário altamente responsivos, implantando conceitos UI UX. Facilidade em traduzir designs e wireframes em código de alta qualidade. Adepto em monitorar, melhorar e manter o desempenho do frontend"
+    "description": "Desenvolvedor front-end especialista com experiência em ReactJS, NextJS e React native. Experiência em projetos web e mobile. Experiência e facilidade em projetar designs com figma e traduzi-los em código de alta qualidade. Adepto em monitorar, melhorar e manter o desempenho do frontend. Familiarizado com metodologias ágeis como Scrum e ferramentas de versionamento como Git, GitHub e GitLab."
   },
   "experience": {
     "title": "Experiência",
@@ -26,7 +25,7 @@
       "title": "DESENVOLVEDOR FRONT END PLENO",
       "company": "Syslae Solutions, Teresina, Piauí",
       "period": "10/2023 - atual",
-      "description": "Criação de aplicações web e aplicativos móveis utilizando as tecnologias: ReactJS, NextJS, React Native, Typescript, Javascript, Scrum, Figma, tendo Git, Gitlab e Github como ferramentas de versionamento. Responsável pela manutenção, criação de novas funcionalidades, gerenciamento de versões, publicação de Apps Android e iOS e suporte aos usuários.",
+      "description": "Criação de aplicações web e apps utilizando as tecnologias: ReactJS, NextJS, React Native, Typescript, Scrum, Figma, Git, Gitlab e Github. Responsável pela criação, gerência, manutenção, novas funcionalidades, gerenciamento de versões, publicação nas lojas e suporte aos usuários.",
       "projects": {
         "title": "Projetos",
         "project1": {
@@ -189,6 +188,7 @@
       "period": "05/2023 - 01/2024",
       "description": "Desenvolvimento de Aplicações Web, Manutenção e Implementações de Projetos Internos utilizando as tecnologias: HTML, SCSS, Angular 15+, ReactJS, React Native, TypeScript, Javascript e Git | Gitlab como ferramentas de versionamento.",
       "projects": {
+        "title": "Projetos",
         "project1": {
           "finalized": true,
           "type": "web",

@@ -2,8 +2,7 @@
     "LocaleSwitcher": {
         "changeLanguage": "EN",
         "portuguese": "Portuguese",
-        "english": "English",
-        "spanish": "Spanish"
+        "english": "English"
     },
     "indexPage": {
         "name": "Monnuery Junior",
@@ -18,7 +17,7 @@
     },
     "about": {
         "title": "About",
-        "description": "Specialist front-end developer with experience in React Native, ReactJS, and NextJS, solid skills in HTML, CSS, JavaScript, and TypeScript. Familiar with agile methodologies such as Scrum and versioning tools like Git, GitHub, and GitLab. Experience in web and mobile projects. Practical experience in designing and implementing highly responsive user interface components, deploying UI UX concepts. Ease in translating designs and wireframes into high-quality code. Adept at monitoring, improving, and maintaining frontend performance."
+        "description": "Expert front-end developer with experience in ReactJS, NextJS and React native. Experience in web and mobile projects. Experience and ease in designing designs with figma and translating them into high-quality code. Adept at monitoring, improving and maintaining frontend performance. Familiar with agile methodologies such as Scrum and versioning tools such as Git, GitHub and GitLab."
     },
     "experience": {
         "title": "Experience",
@@ -26,7 +25,7 @@
             "title": "MID-LEVEL FRONT END DEVELOPER",
             "company": "Syslae Solutions, Teresina, Piauí",
             "period": "10/2023 - present",
-            "description": "Creation of web applications and mobile apps using technologies: ReactJS, NextJS, React Native, Typescript, Javascript, Scrum, Figma, with Git, Gitlab, and Github as versioning tools. Responsible for maintenance, creation of new features, version management, publication of Android and iOS Apps, and user support.",
+            "description": "Creation of web applications and apps using technologies: ReactJS, NextJS, React Native, Typescript, Scrum, Figma, Git, Gitlab and Github. Responsible for creation, management, maintenance, new features, version management, publication in stores and user support.",
             "projects": {
                 "title": "Projects",
                 "project1": {
@@ -61,8 +60,8 @@
                 "project2": {
                     "finalized": true,
                     "type": "mobile",
-                    "title": "Digital Transit",
-                    "description": "Digital Transit is an essential app for traffic agents to simplify accident recording. Capture details, scene photos, use maps for location accuracy. With automatic reports and cloud backup, Digital Transit transforms the process, promoting a digital and effective approach to ensure road safety. Speed, precision, and ease in the palm of your hand.",
+                    "title": "Digital Transito",
+                    "description": "Digital Transito is an essential app for traffic agents to simplify accident recording. Capture details, scene photos, use maps for location accuracy. With automatic reports and cloud backup, Digital Transito transforms the process, promoting a digital and effective approach to ensure road safety. Speed, precision, and ease in the palm of your hand.",
                     "responsibilities": "Project manager, creation and development of new features, maintenance and bug fixing, user support, API integration, publishing versions on Play Store and App Store.",
                     "technologies": {
                         "title": "Technologies",
@@ -189,6 +188,7 @@
             "period": "05/2023 - 01/2024",
             "description": "Development of Web Applications, Maintenance and Implementations of Internal Projects using technologies: HTML, SCSS, Angular 15+, ReactJS, React Native, TypeScript, Javascript and Git | Gitlab as versioning tools.",
             "projects": {
+                "title": "Projects",
                 "project1": {
                     "finalized": true,
                     "type": "web",
