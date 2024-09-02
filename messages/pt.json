@@ -33,7 +33,10 @@
           "type": "mobile",
           "title": "SEI PIAUI",
           "description": "é um aplicativo feito em React Native de gestão de processos e documentos arquivísticos eletrônicos. Uma das suas principais características é o compartilhamento do conhecimento com atualização e comunicação de novos eventos em tempo real. O SEI é uma ferramenta que permite a produção, edição, assinatura e trâmite de documentos dentro do próprio sistema, proporcionando a virtualização de processos e documentos, permitindo atuação simultânea de várias unidades ao mesmo tempo em um mesmo processo, ainda que distantes fisicamente, reduzindo o tempo de realização das atividades.",
-          "responsibilities": "Desenvolvimento de novas funcionalidades, manutenção e correção de bugs, integração com API's, publicação de versões na Play Store e App Store.",
+          "responsibilities": {
+            "title": "Responsabilidades",
+            "description": "Desenvolvimento de novas funcionalidades, manutenção e correção de bugs, integração com API's, publicação de versões na Play Store e App Store."
+          },
           "technologies": {
             "title": "Tecnologias",
             "list": [
@@ -62,7 +65,10 @@
           "type": "mobile",
           "title": "Digital Trânsito",
           "description": "O Digital Trânsito é um app essencial para agentes de trânsito simplificarem o registro de acidentes. Capture detalhes, fotos da cena, utilize mapas para precisão na localização. Com relatórios automáticos e backup em nuvem, o Digital Trânsito transforma o processo, promovendo uma abordagem digital e eficaz para garantir a segurança viária. Agilidade, precisão e facilidade na palma da mão.",
-          "responsibilities": "Gerente de projeto, criação e desenvolvimento de novas funcionalidades, manutenção e correção de bugs, suporte aos usuários, integração com API's, publicação de versões na Play Store e App Store.",
+          "responsibilities": {
+            "title": "Responsabilidades",
+            "description": "Gerente de projeto, criação e desenvolvimento de novas funcionalidades, manutenção e correção de bugs, suporte aos usuários, integração com API's, publicação de versões na Play Store e App Store."
+          },
           "technologies": {
             "title": "Tecnologias",
             "list": [
@@ -97,7 +103,10 @@
           "type": "web",
           "title": "Painel SESAPI",
           "description": "O Painel SESAPI é uma aplicação web que tem como objetivo fornecer informações sobre a situação dos processos de saúde no estado do Piauí. A aplicação consiste em pesquisar um protocolo e obter as informações do fluxo que ocorre entre unidades em tempo real.",
-          "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
+          "responsibilities": {
+            "title": "Responsabilidades",
+            "description": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web."
+          },
           "technologies": {
             "title": "Tecnologias",
             "list": [
@@ -121,7 +130,10 @@
           "type": "web",
           "title": "Painel SEAD",
           "description": "O Painel SEAD é uma aplicação web que tem como objetivo fornecer informações sobre a situação dos processos administrativos de todos os órgãos no estado do Piauí. A aplicação é conta com autenticação com o gov.br, informativos, indicadores parârametrizados, tabelas e gráficos de fácil visualização, documentos, visualização e download de documentos em PDF | HTML | Imagens.",
-          "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
+          "responsibilities": {
+            "title": "Responsabilidades",
+            "description": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web."
+          },
           "technologies": {
             "title": "Tecnologias",
             "list": [
@@ -151,7 +163,10 @@
           "type": "web",
           "title": "Education",
           "description": "O Education é uma ferramenta de gestão escolar, onde é possível realizar a gestão de matrículas, turmas, disciplinas, professores, alunos, notas, frequência, diários de classe, boletins, históricos, relatórios, entre outros.",
-          "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
+          "responsibilities": {
+            "title": "Responsabilidades",
+            "description": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web."
+          },
           "technologies": {
             "title": "Tecnologias",
             "list": [
@@ -194,7 +209,10 @@
           "type": "web",
           "title": "RACE - Ranking dos Cartórios Eleitorais",
           "description": "O RACE é uma aplicação web que tem como objetivo fornecer informações sobre a situação dos cartórios eleitorais no estado do Piauí. A aplicação consiste em cadastrar avaliações, indicadores e parâmetros para cada cartório eleitoral do Piauí e gerar um ranking de acordo com os critérios estabelecidos.",
-          "responsibilities": "Criação e desenvolvimento de novas funcionalidades, manutenção, integração com API's, publicação de versões na web.",
+          "responsibilities": {
+            "title": "Responsabilidades",
+            "description": "Desenvolvimento de novas funcionalidades, manutenção e correção de bugs, integração com API's, publicação de versões na web."
+          },
           "technologies": {
             "title": "Tecnologias",
             "list": [

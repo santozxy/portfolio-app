@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslations } from "next-intl";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import {
   Accordion,
@@ -7,14 +7,22 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import Particles from "@/components/particles";
 
 export default function Component() {
   const t = useTranslations("experience");
-  console.log(t.raw("job1.projects.project1.technologies.list"));
+
   const experiences = [
     {
       title: t("job1.title"),
@@ -26,12 +34,16 @@ export default function Component() {
         {
           title: t("job1.projects.project1.title"),
           description: t("job1.projects.project1.description"),
-          responsibilities: t("job1.projects.project1.responsibilities"),
-          technologies: t
-            .raw("job1.projects.project1.technologies.list")
-            .map((technology: string) => (
-              <Badge key={technology}>{technology}</Badge>
-            )),
+          responsibilities: {
+            title: t("job1.projects.project1.responsibilities.title"),
+            description: t(
+              "job1.projects.project1.responsibilities.description"
+            ),
+          },
+          technologies: {
+            title: t("job1.projects.project1.technologies.title"),
+            list: t.raw("job1.projects.project1.technologies.list"),
+          },
           links: {
             playstore: t("job1.projects.project1.links.playstore"),
             appstore: t("job1.projects.project1.links.appstore"),
@@ -40,12 +52,16 @@ export default function Component() {
         {
           title: t("job1.projects.project2.title"),
           description: t("job1.projects.project2.description"),
-          responsibilities: t("job1.projects.project2.responsibilities"),
-          technologies: t
-            .raw("job1.projects.project2.technologies.list")
-            .map((technology: string) => (
-              <Badge key={technology}>{technology}</Badge>
-            )),
+          responsibilities: {
+            title: t("responsibilities"),
+            description: t(
+              "job1.projects.project2.responsibilities.description"
+            ),
+          },
+          technologies: {
+            title: t("job1.projects.project2.technologies.title"),
+            list: t.raw("job1.projects.project2.technologies.list"),
+          },
           links: {
             playstore: t("job1.projects.project2.links.playstore"),
             appstore: t("job1.projects.project2.links.appstore"),
@@ -54,12 +70,16 @@ export default function Component() {
         {
           title: t("job1.projects.project3.title"),
           description: t("job1.projects.project3.description"),
-          responsibilities: t("job1.projects.project3.responsibilities"),
-          technologies: t
-            .raw("job1.projects.project3.technologies.list")
-            .map((technology: string) => (
-              <Badge key={technology}>{technology}</Badge>
-            )),
+          responsibilities: {
+            title: t("job1.projects.project3.responsibilities.title"),
+            description: t(
+              "job1.projects.project3.responsibilities.description"
+            ),
+          },
+          technologies: {
+            title: t("job1.projects.project3.technologies.title"),
+            list: t.raw("job1.projects.project3.technologies.list"),
+          },
           links: {
             website: t("job1.projects.project3.links.website"),
           },
@@ -67,12 +87,16 @@ export default function Component() {
         {
           title: t("job1.projects.project4.title"),
           description: t("job1.projects.project4.description"),
-          responsibilities: t("job1.projects.project4.responsibilities"),
-          technologies: t
-            .raw("job1.projects.project4.technologies.list")
-            .map((technology: string) => (
-              <Badge key={technology}>{technology}</Badge>
-            )),
+          responsibilities: {
+            title: t("job1.projects.project4.responsibilities.title"),
+            description: t(
+              "job1.projects.project4.responsibilities.description"
+            ),
+          },
+          technologies: {
+            title: t("job1.projects.project4.technologies.title"),
+            list: t.raw("job1.projects.project4.technologies.list"),
+          },
           links: {
             website: t("job1.projects.project4.links.website"),
           },
@@ -80,12 +104,16 @@ export default function Component() {
         {
           title: t("job1.projects.project5.title"),
           description: t("job1.projects.project5.description"),
-          responsibilities: t("job1.projects.project5.responsibilities"),
-          technologies: t
-            .raw("job1.projects.project5.technologies.list")
-            .map((technology: string) => (
-              <Badge key={technology}>{technology}</Badge>
-            )),
+          responsibilities: {
+            title: t("job1.projects.project5.responsibilities.title"),
+            description: t(
+              "job1.projects.project5.responsibilities.description"
+            ),
+          },
+          technologies: {
+            title: t("job1.projects.project5.technologies.title"),
+            list: t.raw("job1.projects.project5.technologies.list"),
+          },
           links: {
             website: t("job1.projects.project5.links.website"),
           },
@@ -109,12 +137,16 @@ export default function Component() {
         {
           title: t("job3.projects.project1.title"),
           description: t("job3.projects.project1.description"),
-          responsibilities: t("job3.projects.project1.responsibilities"),
-          technologies: t
-            .raw("job3.projects.project1.technologies.list")
-            .map((technology: string) => (
-              <Badge key={technology}>{technology}</Badge>
-            )),
+          responsibilities: {
+            title: t("job3.projects.project1.responsibilities.title"),
+            description: t(
+              "job1.projects.project1.responsibilities.description"
+            ),
+          },
+          technologies: {
+            title: t("job3.projects.project1.technologies.title"),
+            list: t.raw("job3.projects.project1.technologies.list"),
+          },
           links: {
             website: t("job3.projects.project1.links.website"),
           },
@@ -124,72 +156,107 @@ export default function Component() {
   ];
 
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader>
         <CardTitle>{t("title")}</CardTitle>
       </CardHeader>
       <CardContent>
-        <ul className="space-y-6">
+        <Accordion type="single" collapsible className="w-full">
           {experiences.map((experience, index) => (
-            <li key={index} className="p-4 rounded-md border">
-              <h3 className="text-lg font-semibold">{experience.title}</h3>
-              <p className="text-sm text-muted-foreground">
-                {experience.company} - {experience.period}
-              </p>
-              <p className="mt-2">{experience.description}</p>
-              {experience.projects && (
-                <Accordion type="single" collapsible className="w-full mt-4">
-                  {experience.projects.map((project, projectIndex) => (
-                    <AccordionItem
-                      key={projectIndex}
-                      value={`project-${index}-${projectIndex}`}
-                    >
-                      <AccordionTrigger className="text-left">
-                        <h4 className="font-semibold">{project.title}</h4>
-                      </AccordionTrigger>
-                      <AccordionContent>
-                        <p className="mt-2 text-sm">{project.description}</p>
-                        <p className="mt-2 text-sm">
-                          <strong>Responsibilities:</strong>{" "}
-                          {project.responsibilities}
-                        </p>
-                        <div className="mt-2">
-                          <strong className="text-sm">Technologies:</strong>
-                          <div className="flex flex-wrap gap-1 mt-1">
-                            {project.technologies}
-                          </div>
-                        </div>
-                        {project.links && (
-                          <div className="mt-2">
-                            <strong className="text-sm">Links:</strong>
-                            <div className="flex gap-2 mt-1">
-                              {Object.entries(project.links).map(
-                                ([key, value]) =>
-                                  value && (
-                                    <Link
-                                      key={key}
-                                      href={value}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="flex items-center text-sm text-primary hover:underline"
-                                    >
-                                      {key.charAt(0).toUpperCase() +
-                                        key.slice(1)}
-                                      <ExternalLink className="w-4 h-4 ml-1" />
-                                    </Link>
-                                  )
-                              )}
+            <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionTrigger className="text-left">
+                <div>
+                  <h3 className="text-lg font-semibold">{experience.title}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {experience.company} - {experience.period}
+                  </p>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="mt-2">{experience.description}</p>
+                {experience.projects && (
+                  <div className="mt-4">
+                    <h4 className="font-semibold mb-2">
+                      {experience.titleProjects}
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {experience.projects.map((project, projectIndex) => (
+                        <Sheet key={projectIndex}>
+                          <SheetTrigger asChild>
+                            <Button
+                              variant="secondary"
+                              className="w-full text-left bg-zinc-600 hover:bg-zinc-700 justify-start h-auto py-2"
+                            >
+                              {project.title}
+                            </Button>
+                          </SheetTrigger>
+                          <SheetContent>
+                            <SheetHeader>
+                              <Particles
+                                className="absolute inset-0 -z-10 animate-fade-in"
+                                quantity={150}
+                              />
+                              <SheetTitle>{project.title}</SheetTitle>
+                              <SheetDescription>
+                                {project.description}
+                              </SheetDescription>
+                            </SheetHeader>
+                            <div className="mt-4">
+                              <h5 className="font-semibold mb-1">
+                                {project.responsibilities.title}
+                              </h5>
+                              <p className="text-sm">
+                                {project.responsibilities.description}
+                              </p>
                             </div>
-                          </div>
-                        )}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              )}
-            </li>
+                            <div className="mt-4">
+                              <h5 className="font-semibold mb-1">
+                                {project.technologies.title}
+                              </h5>
+                              <div className="flex flex-wrap gap-1">
+                                {project.technologies.list.map(
+                                  (tech: string) => (
+                                    <Badge key={tech} variant="secondary">
+                                      {tech}
+                                    </Badge>
+                                  )
+                                )}
+                              </div>
+                            </div>
+                            {project.links &&
+                              Object.keys(project.links).length > 0 && (
+                                <div className="mt-4">
+                                  <h5 className="font-semibold mb-1">Links</h5>
+                                  <div className="flex flex-wrap gap-2">
+                                    {Object.entries(project.links).map(
+                                      ([key, value]) =>
+                                        value && (
+                                          <Link
+                                            key={key}
+                                            href={value}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm text-primary hover:underline"
+                                          >
+                                            {key.charAt(0).toUpperCase() +
+                                              key.slice(1)}
+                                            <ExternalLink className="w-4 h-4 ml-1" />
+                                          </Link>
+                                        )
+                                    )}
+                                  </div>
+                                </div>
+                              )}
+                          </SheetContent>
+                        </Sheet>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </ul>
+        </Accordion>
       </CardContent>
     </Card>
   );
