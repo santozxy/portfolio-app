@@ -23,12 +23,12 @@ import Particles from "@/components/particles";
 export default function Experience() {
   const t = useTranslations("experiences");
 
-  const experiences = t.raw("jobs") as Array<{
+  const experiences = t.raw("jobs") as {
     title: string;
     company: string;
     period: string;
     description: string;
-    projects?: Array<{
+    projects?: {
       finalized: boolean;
       type: string;
       title: string;
@@ -36,8 +36,8 @@ export default function Experience() {
       responsibilities: string;
       technologies: string[];
       links: Record<string, string>;
-    }>;
-  }>;
+    }[];
+  }[];
 
   return (
     <Card className="w-full">
@@ -87,7 +87,9 @@ export default function Experience() {
                               <h5 className="font-semibold mb-1">
                                 {t("titleResponsibilities")}
                               </h5>
-                              <p className="text-sm">{project.responsibilities}</p>
+                              <p className="text-sm">
+                                {project.responsibilities}
+                              </p>
                             </div>
                             <div className="mt-4">
                               <h5 className="font-semibold mb-1">
@@ -101,30 +103,32 @@ export default function Experience() {
                                 ))}
                               </div>
                             </div>
-                            {project.links && Object.keys(project.links).length > 0 && (
-                              <div className="mt-4">
-                                <h5 className="font-semibold mb-1">
-                                  {t("titleLinks")}
-                                </h5>
-                                <div className="flex flex-wrap gap-2">
-                                  {Object.entries(project.links).map(
-                                    ([key, value]) =>
-                                      value && (
-                                        <Link
-                                          key={key}
-                                          href={value}
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                          className="flex items-center text-sm text-primary hover:underline"
-                                        >
-                                          {key.charAt(0).toUpperCase() + key.slice(1)}
-                                          <ExternalLink className="w-4 h-4 ml-1" />
-                                        </Link>
-                                      )
-                                  )}
+                            {project.links &&
+                              Object.keys(project.links).length > 0 && (
+                                <div className="mt-4">
+                                  <h5 className="font-semibold mb-1">
+                                    {t("titleLinks")}
+                                  </h5>
+                                  <div className="flex flex-wrap gap-2">
+                                    {Object.entries(project.links).map(
+                                      ([key, value]) =>
+                                        value && (
+                                          <Link
+                                            key={key}
+                                            href={value}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm text-primary hover:underline"
+                                          >
+                                            {key.charAt(0).toUpperCase() +
+                                              key.slice(1)}
+                                            <ExternalLink className="w-4 h-4 ml-1" />
+                                          </Link>
+                                        )
+                                    )}
+                                  </div>
                                 </div>
-                              </div>
-                            )}
+                              )}
                           </SheetContent>
                         </Sheet>
                       ))}

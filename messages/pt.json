@@ -205,16 +205,20 @@
   },
   "education": {
     "title": "Formação",
-    "degree1": {
-      "title": "Tecnólogo, Análise e Desenvolvimento de Sistemas",
-      "institution": "UniCesumar, Teresina",
-      "period": "Junho 2024 - Junho 2025"
-    },
-    "degree2": {
-      "title": "Licenciatura, Computação",
-      "institution": "Instituto Federal do Piauí - Zona Sul",
-      "period": "Dezembro 2024"
-    }
+    "degrees": [
+      {
+        "title": "Tecnólogo, Análise e Desenvolvimento de Sistemas",
+        "institution": "UniCesumar, Teresina",
+        "period": "Junho 2024 - Junho 2025",
+        "progress": 40
+      },
+      {
+        "title": "Licenciatura, Computação",
+        "institution": "Instituto Federal do Piauí - Zona Sul",
+        "period": "Dezembro 2024",
+        "progress": 90
+      }
+    ]
   },
   "skills": {
     "title": "Habilidades e Competências"

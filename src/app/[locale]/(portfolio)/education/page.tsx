@@ -5,20 +5,12 @@ import { useTranslations } from "next-intl";
 
 export default function Education() {
   const t = useTranslations("education");
-  const educations = [
-    {
-      title: t("degree1.title"),
-      institution: t("degree1.institution"),
-      period: t("degree1.period"),
-      progress: 60,
-    },
-    {
-      title: t("degree2.title"),
-      institution: t("degree2.institution"),
-      period: t("degree2.period"),
-      progress: 90,
-    },
-  ];
+  const educations = t.raw("degrees") as {
+    title: string;
+    institution: string;
+    period: string;
+    progress: number;
+  }[];
 
   return (
     <Card>

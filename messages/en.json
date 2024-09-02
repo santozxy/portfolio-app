@@ -205,16 +205,20 @@
   },
   "education": {
     "title": "Education",
-    "degree1": {
-      "title": "Associate's Degree, Systems Analysis and Development",
-      "institution": "UniCesumar, Teresina",
-      "period": "June 2024 - June 2025"
-    },
-    "degree2": {
-      "title": "Bachelor's Degree, Computer Science",
-      "institution": "Federal Institute of Piauí - South Zone",
-      "period": "December 2024"
-    }
+    "degrees": [
+      {
+        "title": "Associate's Degree, Systems Analysis and Development",
+        "institution": "UniCesumar, Teresina",
+        "period": "June 2024 - June 2025",
+        "progress": 40
+      },
+      {
+        "title": "Bachelor's Degree, Computer Science",
+        "institution": "Federal Institute of Piauí - South Zone",
+        "period": "December 2024",
+        "progress": 90
+      }
+    ]
   },
   "skills": {
     "title": "Skills and Competencies"
